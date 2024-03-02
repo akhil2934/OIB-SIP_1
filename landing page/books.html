@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<head>
+    <title>Complex Shopping Website</title>
+    <style>
+      body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            background-image:url(nat.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #050000;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #ffffff2e;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .product {
+            border: 1px solid #000000;
+            border-width: 5px;
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            background-color: #f2f4ec31;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        button{
+            color: rgb(0, 0, 0);
+            border-radius:30px;
+
+            border-color: #050000;
+            
+        }
+        button:hover{
+            background-color:orange;
+        }
+        p{
+            font-style:italic;
+            font-size:x-large;
+            font-family:'Times New Roman', Times, serif;
+            font-weight: bold;
+            color:black;
+        }
+        h1{
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+
+  
+    <h1 style="color: maroon;"><center><b>"BOOKS SHOPPY"</b></center></h1>
+
+<h1><center>BOOKS</center></h1>
+    <nav>
+        <a href="nav.html"><b style="font-family:'Gill Sans MT';">Home</b></a>
+        <a href="index.html"><b style="font-family:'Gill Sans MT';">Furniture</b></a>
+        <a href="electronic.html"><b style="font-family:'Gill Sans MT';">Electronics</b></a>
+        <a href="cloth.html"><b style="font-family:'Gill Sans MT';">Clothing</b></a>
+        <a href="books.html"><b style="font-family:'Gill Sans MT';">Books</b></a>
+        
+        
+    </nav>
+
+    <main>
+        <div class="product">
+            <img src="REV.jpg" alt="Product 1" style="width:800px;" >
+            <h2>CHETAN BHAGATS REVOLUTINARY BOOK</h2>
+            <p>Description of CHETAN BHAGATS REVOLUTINARY BOOK. Chetan Bhagat is a well-known Indian author known for his bestselling novels. He gained popularity for his ability to connect with a wide audience through his relatable storytelling and accessible language. His books often touch on themes such as love, relationships, and social issues, which resonate with many readers.</p>
+            <p>RS:249</p>
+            <button onclick="addToCart('CHETAN BHAGATS REVOLUTINARY BOOK')">Add to Cart</button>
+            <a href="http://usedbooksonline.buildabazaar.com/my_save_list/shopping_cart">
+                <button>Buy Now!</button>
+              </a>
+        </div>
+
+        <div class="product">
+            <img src="POW.jpg" alt="Product 2">
+            <h2>ROBERT GREENE BOOKS</h2>
+            <p>Description of ROBERT GREENE BOOKS. Robert Greene is a bestselling author for his books on power, seduction and strategy. His first book, The 48 Laws of Power, is a controversial guide to achieving power, drawing from the likes of Machiavelli, Sun Tzu and Henry Kissinger.</p>
+            <p>RS:1499</p>
+            <button onclick="addToCart('ROBERT GREENE BOOKS')">Add to Cart</button>
+            <a href="https://gyaanstore.com/products/the-48-laws-of-power-by-robert-greene-paperback-1">
+                <button>Buy Now!</button>
+              </a>
+
+        </div>
+        <div class="product">
+            <img src="william.jpg" alt="Product 2">
+            <h2>WILLIAMS BOOKS</h2>
+            <p>Description of WILLIAMS BOOKS. Emphasizes the scientific-based underpinnings and evidence-based practices of the speciality.</p>
+            <p>RS:2300</p>
+            <button onclick="addToCart('WILLIAMS BOOKS')">Add to Cart</button>
+            <a href="https://booksandyou.in/products/just-william-p">
+                <button>Buy Now!</button>
+              </a>
+        </div>
+
+        
+
+    </main>
+    <script>
+        function addToCart(productName) {
+           
+            alert('Added to cart: ' + productName);
+        }
+    </script>
+
+ 
+</body>
+</html>

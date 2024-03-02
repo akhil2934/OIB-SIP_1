@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<head>
+    <title>Complex Shopping Website</title>
+    <style>
+        body {
+            background-image:url(backk.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #000000;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #ffffff3f;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .product {
+            border: 1px solid #000000;
+            border-width: 5px;
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            
+            
+            
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+
+        
+        button{
+            color: rgb(0, 0, 0);
+            border-radius:30px;
+            border-color: #000000;
+        }
+        button:hover{
+            background-color:orange;
+        }
+        p{
+            font-style:italic;
+            font-size:x-large;
+            font-family:'Times New Roman', Times, serif;
+            font-weight: bold;
+            color:black;
+        }
+        h1{
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="color: maroon;"><center><b>"FURNITURE SHOPPY"</b></center></h1>
+   <h1><center>FURNITURE</center></h1>
+
+    <nav>
+        <a href="nav.html"><b style="font-family:'Gill Sans MT';">Home</b></a>
+        <a href="index.html"><b style="font-family:'Gill Sans MT';">Furniture</b></a>
+        <a href="electronic.html"><b style="font-family:'Gill Sans MT';">Electronics</b></a>
+        <a href="cloth.html"><b style="font-family:'Gill Sans MT';">Clothing</b></a>
+        <a href="books.html"><b style="font-family:'Gill Sans MT';">Books</b></a>
+        <a href="cart.html"><b style="font-family:'Gill Sans MT';">cart</b></a>
+        
+        
+    </nav>
+
+    <main>
+        <div class="product">
+            <img src="classy.jpg" alt="Product 1">
+            <h2>CLASSY FURNITURE</h2>
+            <p>Description of CLASSY FURNITURE .At Classy, customer satisfaction is our top priority and has been the driving force behind our success in the lifestyle industry. We use state-of-the-art technology to create unique, high-quality furniture that aligns with our customers’ personal vision.
+
+                .</p>
+            <p>RS:47,000</p>
+           
+            <button onclick="addToCart('CLASSY FURNITURE')">Add to Cart</button>
+            <a href="https://www.casafurnishing.in/cart/">
+                <button>Buy Now!</button>
+              </a>
+            
+            </a>
+        </div>
+
+        <div class="product">
+            <img src="chair.jpg" alt="Product 2">
+            <h2>DINING TABLE</h2>
+            <p>Description of DINING TABLE.A table, especially one seating several persons, where meals are served and eaten, especially the major or more formal meals. .</p>
+            <p>RS:49,000</p>
+            <button onclick="addToCart('DINING TABLE')">Add to Cart</button>
+            <a href="https://www.woodenstreet.com/cart">
+                <button>Buy Now!</button>
+              </a>
+            
+        </div>
+        <div class="product">
+            <img src="bed.jpg" alt="Product 2">
+            <h2>DOUBLE COT BED</h2>
+            <p>Description of DOUBLE COT BED.A double cot has enough room to accommodate a single adult but might be too cramped for a couple. .</p>
+            <p>RS:73,123</p>
+            <button onclick="addToCart('DOUBLE COT BED')">Add to Cart</button>
+            <a href="https://www.woodenstreet.com/cart">
+                <button>Buy Now!</button>
+              </a>
+        </div>
+
+     
+
+    </main>
+    <script>
+        function addToCart(productName) {
+           
+            alert('Added to cart: ' + productName);
+        }
+    </script>
+
+</body>
+</html>

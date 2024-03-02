@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Shopping Cart</title>
+  
+ 
+</head>
+<body>
+  <header>
+    <h1 class="logo">Shopping Cart</h1>
+  </header>
+
+  <main>
+    <section id="cartItems" class="cart-items">
+        <img src="C:\Users\my pc\Desktop\cdp\bed.jpg" alt="double cot bed" width="50px" height="50px">
+        <h3></h3>
+        <p>Price:59,000/-</p>
+    </section>
+  </main>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const cartItemsContainer = document.getElementById('cartItems');
+      const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+
+      cartItems.forEach(item => {
+        const cartItemDiv = document.createElement('div');
+        cartItemDiv.classList.add('cart-item');
+        cartItemDiv.innerHTML = `
+          <img src="placeholder.jpg" alt="${item.name}">
+          <h3>${item.name}</h3>
+          <p>${item.price}</p>
+        `;
+        cartItemsContainer.appendChild(cartItemDiv);
+      });
+    });
+  </script>
+</body>
+</html>
